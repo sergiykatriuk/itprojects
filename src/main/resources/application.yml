@@ -1,0 +1,31 @@
+spring:
+        jpa:
+            open-in-view: false
+#            properties:
+#                        hibernate:
+#                                    enable_lazy_load_no_trans: true
+        datasource:
+                    username: diploma
+                    password: JavaPro_2018
+                    url: "jdbc:mysql://localhost:3306/eng?useSSL=false&useUnicode=yes&characterEncoding=UTF-8"
+#                    hikari:
+#                          connection-timeout: 900000
+        session:
+                store-type: jdbc
+                jdbc:
+                    initialize-schema: always
+#                    initializer:
+server:
+        port: 9999
+        servlet:
+                session:
+                        timeout: 86400
+logging:
+        level:
+                root: warn
+        file: logs/spring-boot-logging.log
+
+mailHost: "195.54.163.16"
+mailUser: "admin@vps14015ua.hyperhost.name"
+mailPassword: "6ThGdz0LGn"
+
